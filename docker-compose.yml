@@ -7,7 +7,7 @@ services:
     ports:
       - '3000:3000'
     depends_on:
-      - mongo
+      - mongo  # Dịch vụ người dùng phụ thuộc vào dịch vụ MongoDB
   product-service:
     build:
       context: .
@@ -15,7 +15,7 @@ services:
     ports:
       - '3001:3001'
     depends_on:
-      - mongo
+      - mongo  # Dịch vụ sản phẩm phụ thuộc vào dịch vụ MongoDB
   mongo:
     image: mongo
     ports:
