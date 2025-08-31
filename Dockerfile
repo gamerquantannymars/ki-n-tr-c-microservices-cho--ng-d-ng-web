@@ -16,4 +16,5 @@ COPY . .
 EXPOSE 3000
 
 # Command to run the application
+# This starts the Node.js application from the specified index.js file
 CMD ["node", "src/user-service/index.js"]
